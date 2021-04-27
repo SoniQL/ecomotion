@@ -65,7 +65,7 @@ class MainContainer extends React.Component {
       method: 'POST',
       headers: {
         //this authorization is a require header for api
-        Authorization: 'Bearer Mtg90asNZIMTHndpW3YNFA',
+        Authorization: 'Bearer h2OryfhsFJBzwfn0fTYq0Q',
         'Content-Type': 'application/json',
       },
       body: JSON.stringify(bodyData),
