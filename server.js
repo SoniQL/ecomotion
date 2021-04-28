@@ -60,9 +60,9 @@ const checkUserLoggedIn = (req, res, next) => {
 // });
 
 //grab flights path
-app.get('/flights', (req, res) => {
-  res.sendFile(path.resolve(__dirname, './index.html'));
-});
+// app.get('/flights', (req, res) => {
+//   res.sendFile(path.resolve(__dirname, './index.html'));
+// });
 
 // Auth Routes -- boiler plate passport
 app.get(
@@ -89,7 +89,7 @@ app.get(
     res.locals.email = req.user.emails[0].value;
     res.locals.ssid = req.cookies['session-name.sig'];
     //this is kind of a strange path working around because we need to access the userInfo data to our addProfile middleware
-    res.redirect('/flights');
+    res.redirect('/profile');
     next();
   },
   //this middleware adds the userData to the users table in sql database
