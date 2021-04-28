@@ -2,7 +2,7 @@ import React, { Component, useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
 import MainContainer from '../flightPages/MainContainer.jsx';
 
-class SearchContainer extends Component {
+class AccountContainer extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -21,7 +21,8 @@ class SearchContainer extends Component {
           <div className="logoBox">ecomotion</div>
         </div>
         <div className='gallery'>
-          <MainContainer />
+          <h2 id="accountInfoHeader"> Account Info </h2>
+  
         </div>
       </div>
     ) 
@@ -29,4 +30,4 @@ class SearchContainer extends Component {
 }
 
 
-export default SearchContainer;
+export default AccountContainer;
