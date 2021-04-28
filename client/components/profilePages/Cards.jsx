@@ -47,7 +47,7 @@ export default function Cards(props) {
         <p>Emitted 8 kgs of carbon</p>
         <p>Plant 8,000 trees 🌳</p>
         <p>Have 24 meatless Mondays 🥩</p>
-        <p>Choose not to throw plastic into the sea</p>
+        <p>Choose not to throw plastic into the sea 🗑</p>
       </div>
     </div>
   );

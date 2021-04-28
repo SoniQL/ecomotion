@@ -29,10 +29,11 @@ class ProfileContainer extends Component {
     return (
       <div className='profileContainer'>
         <div className='nav'>
-          <div>Profile picture</div>
-          <div>New search</div>
-          <div>Account info</div>
-          <div>Log out</div>
+            <div className="navLinks" id="profPic">Profile Picture<div id="picture"></div></div>
+            <div className="navLinks" id="newSearch">New Search</div>
+            <div className="navLinks" id="accountInfo">Account Info</div>
+            <div className="navLinks" id="logOut">Log Out</div>
+            <div id="logoBox">ecomotion</div>
         </div>
         <div className='gallery'>
           <TripHeader />
