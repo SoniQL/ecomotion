@@ -210,14 +210,13 @@ a {
   padding: 1rem;
   display: block;
   width: 20%;
-  height: 700;
-  margin-top: 10vh;
+  height: 100%;
   border-radius: 15px;
   margin-left: 15px;
   box-shadow: 3px 3px 3px black;
 
 
-  .navLinks {
+  .navLink {
     border: 1px solid $border;
     border-radius: 5px;
     padding-top: 15px;
@@ -227,7 +226,7 @@ a {
     color: white;
   }
 
-  .navLinks:hover {
+  .navLink:hover {
     background-color: #7673B5;
     box-shadow: 2px 2px 2px black;
 
