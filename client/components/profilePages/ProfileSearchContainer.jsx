@@ -1,9 +1,9 @@
 import React from 'react';
-import FlightInterface from './FlightInterface.jsx';
-import MakeDifferenceContainer from './MakeDifferenceContainer.jsx';
+import FlightInterface from '../flightPages/FlightInterface.jsx';
+import MakeDifferenceContainer from '../flightPages/MakeDifferenceContainer.jsx';
 import { Link } from 'react-router-dom';
 
-class MainContainer extends React.Component {
+class ProfileSearchContainer extends React.Component {
   //creating our initial state
   constructor(props) {
     super(props);
@@ -121,8 +121,6 @@ class MainContainer extends React.Component {
             onSubmit={this.onSubmit}
             carbon={this.state.flightInfo.carbon}
           />
-          {/* Put this wherever we want our login to be */}
-          <Link to='/login'>Log in</Link>
           {/* pass carbon flight info into this component and actions */}
           <MakeDifferenceContainer
             actions={this.state.offsetActions}
@@ -134,4 +132,4 @@ class MainContainer extends React.Component {
   }
 }
 
-export default MainContainer;
+export default ProfileSearchContainer;

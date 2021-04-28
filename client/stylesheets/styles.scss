@@ -1,7 +1,7 @@
 $border: #2f0e50b5;
 $mainPurple: #66339933;
-$lightColor: #eeecf5f0;
-$mediumColor: #bbc2eb;
+$lightColor: #eeecf5c2;
+$mediumColor: #bbc2ebcc;
 
 /* default base settings */
 
@@ -36,8 +36,8 @@ a {
   flex-direction: column;
   height: 80vh;
   border: 2px solid $border;
-  width: 60%;
-  margin-left: 20%;
+  width: 90%;
+  margin-left: 5%;
   background: #66339933;
   border-radius: 10px;
   margin-top: 5vh;
@@ -53,8 +53,7 @@ a {
 
   .form-container {
     display: flex;
-
-    border-bottom: 1px solid $border;
+    // border-bottom: 1px solid $border;
   }
 
   .make-diff-container {
@@ -181,13 +180,16 @@ a {
     width: 100%;
     border-radius: 5px;
     border: 1px solid $border;
-    font-size: 0.75em;
+    font-size: 1em;
+    background-color: $mainPurple;
+    color: black;
   }
 
   button:hover {
     cursor: pointer;
     background-color: $lightColor;
     box-shadow: 1px 1px 1px black;
+    color: black;
   }
 
   h3 {
@@ -212,26 +214,29 @@ a {
   width: 20%;
   height: 100%;
   border-radius: 15px;
-  margin-left: 15px;
   box-shadow: 3px 3px 3px black;
 
 
   .navLink {
-    border: 1px solid $border;
+    border: 2px solid $border;
     border-radius: 5px;
     padding-top: 15px;
     height: 60px;
     text-align: center;
     font-size: 1.35em;
     color: white;
+    margin: 5px;
   }
 
   .navLink:hover {
     background-color: #7673B5;
     box-shadow: 2px 2px 2px black;
-
   }
 
+   a {
+     color: white;
+   }
+   
   #picture {
     border: 2px solid white;
     height: 220;
@@ -244,7 +249,7 @@ a {
     font-family: "Pacifico";
   }
 
-  #logoBox {
+  .logoBox {
     margin-top: 50px;
     text-align: center;
     // background-color: pink;
@@ -263,7 +268,7 @@ a {
   // grid-column-gap: 1em;
   background-color: $mainPurple;
   width: 65%;
-  height: 85%;
+  height: 90%;
   margin-left: 5%;
   margin-top: 7vh;
   border: 1px solid $border;
@@ -324,28 +329,6 @@ a {
     font-size: 14px;
   }
 }
-
-// .cardHolder {
-//   display: grid;
-//   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-//   grid-auto-flow: row;
-//   gap: 1rem;
-//   /* background-color: gold; */
-//   padding: 1rem;
-// }
-
-// .cardStyling {
-//   display: flex;
-//   flex-direction: column;
-//   text-align: center;
-//   background-color: rgb(253, 253, 253);
-//   border-radius: 7px;
-//   box-shadow: -1px 5px 26px -5px rgba(0, 0, 0, 0.81);
-//   -webkit-box-shadow: -1px 5px 26px -5px rgba(0, 0, 0, 0.81);
-//   -moz-box-shadow: -1px 5px 26px -5px rgba(0, 0, 0, 0.81);
-// }
-
-
 
 .actionTypes {
   display: flex;

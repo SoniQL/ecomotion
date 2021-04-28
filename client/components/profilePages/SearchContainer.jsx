@@ -1,9 +1,9 @@
 import React, { Component, useEffect, useState } from "react";
-import TripHeader from "./TripHeader.jsx";
-import TripCardsHolder from "./TripCardsHolder.jsx";
 import { Link } from "react-router-dom";
+import MainContainer from "../flightPages/MainContainer.jsx";
+import ProfileSearchContainer from "./ProfileSearchContainer.jsx";
 
-class ProfileContainer extends Component {
+class SearchContainer extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -11,22 +11,7 @@ class ProfileContainer extends Component {
     };
   }
 
-  componentDidMount() {
-    //fetching the info from flights table in sql db.
-    fetch("/api/loadProfile")
-      .then((response) => {
-        console.log("raw data", response);
-        return response.json();
-      })
-      .then((profileDataResults) => {
-        console.log("logging data call for profiles", profileDataResults);
-        return this.setState({ profileData: profileDataResults.array_to_json });
-      });
-  }
-
-  //send profile data to child components
   render() {
-    console.log("Rendering profile container...");
     return (
       <div className="profileContainer">
         <div className="nav">
@@ -46,12 +31,11 @@ class ProfileContainer extends Component {
           <div className="logoBox">ecomotion</div>
         </div>
         <div className="gallery">
-          <TripHeader />
-          <TripCardsHolder profileData={this.state.profileData} />
+          <ProfileSearchContainer />
         </div>
       </div>
     );
   }
 }
 
-export default ProfileContainer;
+export default SearchContainer;
