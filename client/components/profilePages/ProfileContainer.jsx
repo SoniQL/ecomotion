@@ -30,10 +30,10 @@ class ProfileContainer extends Component {
     return (
       <div className='profileContainer'>
         <div className='nav'>
-          <div>Profile picture</div>
-          <div><Link to='/profile'>My profile</Link></div>
-          <div><Link to='/flights'>New search</Link></div>
-          <div><Link to='/logout'>Log out</Link></div>
+          <div className="navLink" id="profPic"><Link to='/profile'>My profile</Link><div id='picture'></div></div>
+          <div className="navLink" id="newSearch"><Link to='/search'>New search</Link></div>
+          <div className="navLink" id="logOut"><Link to='/logout'>Log out</Link></div>
+          <div className="logoBox">ecomotion</div>
         </div>
         <div className='gallery'>
           <TripHeader />

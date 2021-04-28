@@ -1,7 +1,6 @@
 import React from 'react';
 import FlightInterface from './FlightInterface.jsx';
 import MakeDifferenceContainer from './MakeDifferenceContainer.jsx';
-import "../../stylesheets/styles.scss";
 import { Link } from 'react-router-dom';
 
 class MainContainer extends React.Component {
