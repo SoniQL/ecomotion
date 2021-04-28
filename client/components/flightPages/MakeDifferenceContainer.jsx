@@ -12,6 +12,7 @@ const MakeDifferenceContainer = (props) => {
     //1 plastic bag is .0727 lbs of carbon emissions
     props.actions.bags = Math.ceil((props.carbon * 2.2) / 0.0727);
   }
+
   return (
     <div className='make-diff-container'>
       {/* if the trees are greater than 1 (the initial state) then render the values*/}
@@ -23,7 +24,8 @@ const MakeDifferenceContainer = (props) => {
             {' '}
             🐄 🐄 🐄 Enjoying {props.actions.meat} Meatless Mondays 🐄 🐄 🐄
           </p>
-          <p> 🛍️ 🛍️ 🛍️ Not Using {props.actions.bags} Plastic Bags 🛍️ 🛍️ 🛍️</p><button id='drive-btn' name='drive' type='submit'>Take a drive instead?</button>
+          <p> 🛍️ 🛍️ 🛍️ Not Using {props.actions.bags} Plastic Bags 🛍️ 🛍️ 🛍️</p>
+          <button id='drive-btn' name='drive' type='button' onClick={() => {console.log('TAKING A DRIVE')}}>Take a drive instead?</button>
         </div>
       ) : (
         // otherwise render nothing
