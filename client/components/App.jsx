@@ -5,6 +5,7 @@ import MakeDifferenceContainer from './flightPages/MakeDifferenceContainer.jsx';
 import LoginContainer from './loginPages/LoginContainer.jsx';
 import TitleHeader from './loginPages/TitleHeader.jsx';
 import ProfileContainer from './profilePages/ProfileContainer.jsx';
+import SearchContainer from './profilePages/SearchContainer.jsx';
 import "../stylesheets/styles.scss";
 
 // base App component that stays the same and renders
@@ -17,6 +18,7 @@ function App() {
       <Switch>
         <Route exact path='/' render={() => <MainContainer />} />
         <Route path='/profile' render={() => <ProfileContainer />} />
+        <Route path='/search' render={() => <SearchContainer />} />
         <Route path='/login' render={() => <LoginContainer />} />
         <Route path='/logout' render={() => <MainContainer />} />
       </Switch>

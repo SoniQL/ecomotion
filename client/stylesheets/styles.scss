@@ -210,29 +210,31 @@ a {
   padding: 1rem;
   display: block;
   width: 20%;
-  height: 700;
-  margin-top: 10vh;
+  height: 100%;
   border-radius: 15px;
-  margin-left: 15px;
   box-shadow: 3px 3px 3px black;
 
 
-  .navLinks {
-    border: 1px solid $border;
+  .navLink {
+    border: 2px solid $border;
     border-radius: 5px;
     padding-top: 15px;
     height: 60px;
     text-align: center;
     font-size: 1.35em;
     color: white;
+    margin: 5px;
   }
 
-  .navLinks:hover {
+  .navLink:hover {
     background-color: #7673B5;
     box-shadow: 2px 2px 2px black;
-
   }
 
+   a {
+     color: white;
+   }
+   
   #picture {
     border: 2px solid white;
     height: 220;
@@ -245,7 +247,7 @@ a {
     font-family: "Pacifico";
   }
 
-  #logoBox {
+  .logoBox {
     margin-top: 50px;
     text-align: center;
     // background-color: pink;
@@ -325,28 +327,6 @@ a {
     font-size: 14px;
   }
 }
-
-// .cardHolder {
-//   display: grid;
-//   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-//   grid-auto-flow: row;
-//   gap: 1rem;
-//   /* background-color: gold; */
-//   padding: 1rem;
-// }
-
-// .cardStyling {
-//   display: flex;
-//   flex-direction: column;
-//   text-align: center;
-//   background-color: rgb(253, 253, 253);
-//   border-radius: 7px;
-//   box-shadow: -1px 5px 26px -5px rgba(0, 0, 0, 0.81);
-//   -webkit-box-shadow: -1px 5px 26px -5px rgba(0, 0, 0, 0.81);
-//   -moz-box-shadow: -1px 5px 26px -5px rgba(0, 0, 0, 0.81);
-// }
-
-
 
 .actionTypes {
   display: flex;
