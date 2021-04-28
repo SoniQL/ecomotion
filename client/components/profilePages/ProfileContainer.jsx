@@ -1,6 +1,6 @@
-import React, { Component, useEffect, useState } from 'react';
-import TripHeader from './TripHeader.jsx';
-import TripCardsHolder from './TripCardsHolder.jsx';
+import React, { Component, useEffect, useState } from "react";
+import TripHeader from "./TripHeader.jsx";
+import TripCardsHolder from "./TripCardsHolder.jsx";
 
 class ProfileContainer extends Component {
   constructor(props) {
@@ -26,9 +26,9 @@ class ProfileContainer extends Component {
   //send profile data to child components
   render() {
     return (
-      <div className='profileContainer'>
-        <div className='nav'>My Saved Trips</div>
-        <div className='gallery'>
+      <div className="profileContainer">
+        <div className="nav">My Saved Trips</div>
+        <div className="gallery">
           <TripHeader profileData={this.state.profileData} />
           <TripCardsHolder profileData={this.state.profileData} />
         </div>
