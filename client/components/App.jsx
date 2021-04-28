@@ -15,8 +15,10 @@ function App() {
     <BrowserRouter>
       {/* essentially a switch statement that chooses the component to render based on the path */}
       <Switch>
-        <Route exact path='/' render={() => <LoginContainer />} />
-        <Route path='/flights' render={() => <MainContainer />} />
+        {/* <Route exact path='/' render={() => <LoginContainer />} /> */}
+        {/* <Route path='/flights' render={() => <MainContainer />} /> */}
+        {/* Render search page at root: */}
+        <Route path='/' render={() => <MainContainer />} />
         <Route path='/profile' render={() => <ProfileContainer />} />
       </Switch>
     </BrowserRouter>

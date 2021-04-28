@@ -25,11 +25,12 @@ class ProfileContainer extends Component {
 
   //send profile data to child components
   render() {
+    console.log('Rendering profile container...');
     return (
-      <div className="profileContainer">
-        <div className="nav">My Saved Trips</div>
-        <div className="gallery">
-          <TripHeader profileData={this.state.profileData} />
+      <div className='profileContainer'>
+        <div className='nav'>My Saved Trips</div>
+        <div className='gallery'>
+          <TripHeader />
           <TripCardsHolder profileData={this.state.profileData} />
         </div>
       </div>
