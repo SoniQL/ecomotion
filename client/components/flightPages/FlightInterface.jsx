@@ -15,7 +15,7 @@ class FlightInterface extends React.Component {
     return (
       <div className='flightInterface'>
         <FlightForm onSubmit={this.props.onSubmit} />
-        <FlightOutput carbon={this.props.carbon} />
+        <FlightOutput dist={this.props.dist} carbon={this.props.carbon}/>
       </div>
     );
   }

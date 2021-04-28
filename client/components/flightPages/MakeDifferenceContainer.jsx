@@ -23,7 +23,7 @@ const MakeDifferenceContainer = (props) => {
             {' '}
             🐄 🐄 🐄 Enjoying {props.actions.meat} Meatless Mondays 🐄 🐄 🐄
           </p>
-          <p> 🛍️ 🛍️ 🛍️ Not Using {props.actions.bags} Plastic Bags 🛍️ 🛍️ 🛍️</p>
+          <p> 🛍️ 🛍️ 🛍️ Not Using {props.actions.bags} Plastic Bags 🛍️ 🛍️ 🛍️</p><button id='drive-btn' name='drive' type='submit'>Take a drive instead?</button>
         </div>
       ) : (
         // otherwise render nothing
