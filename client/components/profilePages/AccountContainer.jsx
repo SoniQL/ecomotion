@@ -1,6 +1,7 @@
 import React, { Component, useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
-import MainContainer from '../flightPages/MainContainer.jsx';
+import AccountInfo from './AccountInfo.jsx'
+
 
 class AccountContainer extends Component {
   constructor(props) {
@@ -22,7 +23,7 @@ class AccountContainer extends Component {
         </div>
         <div className='gallery'>
           <h2 id="accountInfoHeader"> Account Info </h2>
-  
+          <AccountInfo />
         </div>
       </div>
     ) 
