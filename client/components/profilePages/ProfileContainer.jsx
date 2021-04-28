@@ -1,6 +1,7 @@
 import React, { Component, useEffect, useState } from "react";
 import TripHeader from "./TripHeader.jsx";
 import TripCardsHolder from "./TripCardsHolder.jsx";
+import { Link } from 'react-router-dom';
 
 class ProfileContainer extends Component {
   constructor(props) {
@@ -29,11 +30,10 @@ class ProfileContainer extends Component {
     return (
       <div className='profileContainer'>
         <div className='nav'>
-            <div className="navLinks" id="profPic">Profile Picture<div id="picture"></div></div>
-            <div className="navLinks" id="newSearch">New Search</div>
-            <div className="navLinks" id="accountInfo">Account Info</div>
-            <div className="navLinks" id="logOut">Log Out</div>
-            <div id="logoBox">ecomotion</div>
+          <div>Profile picture</div>
+          <div><Link to='/profile'>My profile</Link></div>
+          <div><Link to='/flights'>New search</Link></div>
+          <div><Link to='/logout'>Log out</Link></div>
         </div>
         <div className='gallery'>
           <TripHeader />
