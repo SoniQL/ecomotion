@@ -342,3 +342,56 @@ a {
   margin-bottom: 1rem;
   size: 10px;
 }
+
+#accountInfoHeader {
+  display: grid;
+  place-items: center;
+  color: white;
+  margin-top: 2vh;
+}
+
+.accountInfoRow {
+  display: flex;
+  justify-content: space-between;
+  margin: 2vh;
+  margin-top: 7vh;
+  color: white;
+
+  p {
+  margin: 3vh;
+}
+
+
+  #picture {
+  border: 2px solid white;
+  height: 220;
+  width: 70%;
+  border-radius: 100%;
+  margin: auto;
+}
+
+.navLink {
+  border: 2px solid $border;
+  border-radius: 5px;
+  padding-top: 15px;
+  height: 60px;
+  text-align: center;
+  font-size: 1.35em;
+  color: white;
+  margin: 5px;
+}
+
+#profPic {
+  height: 300px;
+  font-family: 'Pacifico';
+  margin-right: 10vw;
+  color: white;
+}
+
+
+}
+
+
+
+
+
