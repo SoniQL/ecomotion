@@ -5,6 +5,7 @@ import MakeDifferenceContainer from './flightPages/MakeDifferenceContainer.jsx';
 import LoginContainer from './loginPages/LoginContainer.jsx';
 import TitleHeader from './loginPages/TitleHeader.jsx';
 import ProfileContainer from './profilePages/ProfileContainer.jsx';
+import "../stylesheets/styles.scss";
 
 // base App component that stays the same and renders
 // different parent components based on the path specified
@@ -32,17 +33,17 @@ export default App;
 // component hierarchy
 
 // App
-//   LoginContainer
-//     TitleHeader
-//     ChoiceHolder
-//   MainContainer
-//     FlightInterface
-//       FlightForm
-//       FlightOutput
-//     MakeDifferenceContainer
-//   ProfileContainer
-//     TripHeader
-//     TripCardsHolder
-//       Cards
-//         FlightHeading
-//         Action
+//   |LoginContainer
+//     |TitleHeader
+//     |ChoiceHolder
+//   |MainContainer
+//     |FlightInterface
+//       |FlightForm
+//       |FlightOutput
+//     |MakeDifferenceContainer
+//   |ProfileContainer
+//     |TripHeader
+//     |TripCardsHolder
+//       |Cards
+//         |FlightHeading
+//         |Action

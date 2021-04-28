@@ -1,6 +1,6 @@
-import React, { Component, useEffect, useState } from 'react';
-import TripHeader from './TripHeader.jsx';
-import TripCardsHolder from './TripCardsHolder.jsx';
+import React, { Component, useEffect, useState } from "react";
+import TripHeader from "./TripHeader.jsx";
+import TripCardsHolder from "./TripCardsHolder.jsx";
 
 class ProfileContainer extends Component {
   constructor(props) {

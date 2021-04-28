@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
 import App from './components/App.jsx';
-import './stylesheets/styles.css';
+import './stylesheets/styles.scss';
 
 //linking our main App component to the 'root' element of the index.html through render keyword
 render(<App />, document.getElementById('root'));

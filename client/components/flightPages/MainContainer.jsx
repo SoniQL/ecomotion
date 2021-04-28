@@ -1,6 +1,7 @@
 import React from 'react';
 import FlightInterface from './FlightInterface.jsx';
 import MakeDifferenceContainer from './MakeDifferenceContainer.jsx';
+import "../../stylesheets/styles.scss";
 
 class MainContainer extends React.Component {
   //creating our initial state

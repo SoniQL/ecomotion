@@ -23,3 +23,37 @@ CONTEXT API
 4. anything in these consumer tags will be an anonymous function that holds the argument context which is the value you passed in step 2.
 5. React.fragment to return more than one element from the anonymous function in the context.consumer tags.
 6. update state by putting updating function in your
+
+
+EcoMotion
+https://github.com/ecomotion/ecomotion
+
+ToDo 
+
+###Sass Conversion: 
+- ✅ WebPack:
+- ✅ Configure webpack to handle sass
+- [ ] Configure webpack to handle images 
+     -  [ ] Import sass on react files 
+     -  [ ] Begin making variables and nesting in .scss file, clean up the existing  design 
+
+###Profile Display
+- [ ] Front End:
+- [ ] inspect existing react elements and see why they are currently not displaying
+- [ ] Back End: 
+- [ ] set up the route to the profile page 
+
+### Application flow
+- [ ] sketch out pages and how they link together 
+
+
+###Page Flow:
+- [ ] Route root to search page
+- [ ] Add sign-in and sign-up links to search page
+
+###Testing:
+- [ ] Add necessary testing components to webpack
+- [ ] add tests 
+
+
+###Inspecting:	
