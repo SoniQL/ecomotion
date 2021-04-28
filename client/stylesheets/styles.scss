@@ -30,6 +30,7 @@ a {
 }
 
 /* Flight Page styling */
+
 .outerBox {
   display: flex;
   flex-direction: column;
@@ -126,16 +127,17 @@ a {
     font-family: "Pacifico", cursive;
   }
 
+  /* Main search page styling below */
+
   #header-container {
     margin-bottom: 1rem;
-    font-family: "Pacifico", cursive;
-    align-items: center;
-    justify-content: center;
-    margin-left: 45%;
-    align-items: center;
-    justify-content: center;
-    margin-left: 45%;
+    margin-top: 1rem;
+    font-family: 'Pacifico', cursive;
     color: rgb(255, 245, 245);
+
+    h1 {
+      text-align: center;
+    }
   }
 
   .googleSign {
