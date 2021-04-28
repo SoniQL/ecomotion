@@ -41,7 +41,7 @@ a {
   background: #66339933;
   border-radius: 10px;
   margin-top: 5vh;
-  box-shadow: 2px 2px 2px solid black;
+  box-shadow: 3px 3px 3px solid black;
 
   .headerFlight {
     height: 40%;
@@ -205,10 +205,55 @@ a {
 }
 
 .nav {
-  background-color: rgb(136, 133, 133);
+  // background-color: rgba(78, 74, 97, 0.534);
+  background-color: $mainPurple;
   padding: 1rem;
   display: block;
   width: 20%;
+  height: 700;
+  margin-top: 10vh;
+  border-radius: 15px;
+  margin-left: 15px;
+  box-shadow: 3px 3px 3px black;
+
+
+  .navLinks {
+    border: 1px solid $border;
+    border-radius: 5px;
+    padding-top: 15px;
+    height: 60px;
+    text-align: center;
+    font-size: 1.35em;
+    color: white;
+  }
+
+  .navLinks:hover {
+    background-color: #7673B5;
+    box-shadow: 2px 2px 2px black;
+
+  }
+
+  #picture {
+    border: 2px solid white;
+    height: 220;
+    width: 70%;
+    border-radius: 100%;
+    margin: auto;
+  }
+  #profPic {
+    height: 300px;
+    font-family: "Pacifico";
+  }
+
+  #logoBox {
+    margin-top: 50px;
+    text-align: center;
+    // background-color: pink;
+    height: 80px;
+    font-size: 3em;
+    font-family: "Pacifico", cursive;
+    color: white;
+  }
 }
 
 .gallery {
@@ -217,8 +262,14 @@ a {
   // grid-template-rows: repeat(auto-fill, 120px);
   // grid-row-gap: .5em;
   // grid-column-gap: 1em;
-  background-color: pink;
-  width: 100%;
+  background-color: $mainPurple;
+  width: 65%;
+  height: 85%;
+  margin-left: 5%;
+  margin-top: 7vh;
+  border: 1px solid $border;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px black;
 
 }
 
@@ -232,6 +283,10 @@ a {
 
 .tripHeader {
   text-align: center;
+  font-size: 2em;
+  color: white;
+  margin-bottom: 10px;
+  font-family: "Pacifico";
 }
 
 #cardsContainer {
@@ -239,22 +294,28 @@ a {
   // font-size: 2rem;
   // margin-left: 1rem;
   width: 100%;
+  height: 90%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(auto-fill, auto);
   grid-row-gap: .5em;
   grid-column-gap: .5em;
-  background-color: #2196F3;
+  background-color: inherit;
   padding: 10px;
   overflow-y: scroll;
+}
+ #cardsContainer::-webkit-scrollbar {
+  display: none;
 }
 
 .card {
   background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
+  border: 1px solid $border;
   padding: 20px;
   font-size: 30px;
   text-align: center;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px black;
 
   h3 {
     font-size: 14px;

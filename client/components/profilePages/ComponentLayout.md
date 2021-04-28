@@ -1,0 +1,11 @@
+- App
+  - Profile Page:
+    -Header
+    -NavBar
+      -Profile pic
+      -My Trips
+        -Tip list
+      -New Search
+        -search box 
+      -Account Details
+        -info box
