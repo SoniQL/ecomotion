@@ -12,6 +12,7 @@ class MainContainer extends React.Component {
         dep: 'xxx',
         arr: 'yyy',
         carbon: 0,
+        dist: 0,
       },
       offsetActions: {
         trees: 1,
@@ -40,7 +41,10 @@ class MainContainer extends React.Component {
     // console.log("ARR CODE");
     // console.log(arrCode);
 
-    let carbonOutput = 0;
+    let returnObj = {
+      distance: 0,
+      carbonOutput: 0
+    };
 
     //body creating for api call
     let bodyData = {
@@ -81,14 +85,18 @@ class MainContainer extends React.Component {
         console.log('full data obj', response);
         console.log('emissions estimates', response.data.attributes);
         //getting the proper data for carbon output from return object
-        return (carbonOutput = response.data.attributes.carbon_kg);
+        return returnObj = {
+          distance: response.data.attributes.distance_value,
+          carbonOutput: response.data.attributes.carbon_kg
+        };
       })
       .then((carbonOutput) => {
         this.setState({
           flightInfo: {
             dep: event.target.depField.value,
             arr: event.target.arrField.value,
-            carbon: carbonOutput,
+            dist: returnObj.distance,
+            carbon: returnObj.carbonOutput,
           },
         });
         console.log('state after query', this.state.flightInfo);
@@ -119,6 +127,7 @@ class MainContainer extends React.Component {
           {/* passing onSubmit and carbon info */}
           <FlightInterface
             onSubmit={this.onSubmit}
+            dist={this.state.flightInfo.dist}
             carbon={this.state.flightInfo.carbon}
           />
           {/* Put this wherever we want our login to be */}

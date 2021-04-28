@@ -10,9 +10,9 @@ class FlightOutput extends React.Component {
     return (
       <div className='flightOutput'>
         <div>
-          {this.props.carbon === 0
+          {!this.props.dist || !this.props.carbon
             ? ''
-            : `Your flight will generate ${this.props.carbon}kg of CO2`}
+            : `Your ${this.props.dist}km flight will generate ${this.props.carbon}kg of CO2`}
         </div>
       </div>
     );
