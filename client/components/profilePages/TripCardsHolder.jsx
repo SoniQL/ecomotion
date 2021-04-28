@@ -20,7 +20,7 @@ class TripCardsHolder extends Component {
     //     );
     //     flightCards.push(<Cards profileData={this.props.profileData[i]}></Cards>);
     //   }
-    for (let i = 0; i < 7; i += 1) {
+    for (let i = 0; i < 20; i += 1) {
       flightCards.push(<Cards />);
     }
 
