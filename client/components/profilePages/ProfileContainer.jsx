@@ -28,7 +28,12 @@ class ProfileContainer extends Component {
     console.log('Rendering profile container...');
     return (
       <div className='profileContainer'>
-        <div className='nav'>My Saved Trips</div>
+        <div className='nav'>
+          <div>Profile picture</div>
+          <div>New search</div>
+          <div>Account info</div>
+          <div>Log out</div>
+        </div>
         <div className='gallery'>
           <TripHeader />
           <TripCardsHolder profileData={this.state.profileData} />

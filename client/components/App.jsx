@@ -18,8 +18,9 @@ function App() {
         {/* <Route exact path='/' render={() => <LoginContainer />} /> */}
         {/* <Route path='/flights' render={() => <MainContainer />} /> */}
         {/* Render search page at root: */}
-        <Route path='/' render={() => <MainContainer />} />
-        <Route path='/profile' render={() => <ProfileContainer />} />
+        {/* <Route path='/' render={() => <MainContainer />} /> */}
+        {/* <Route path='/profile' render={() => <ProfileContainer />} /> */}
+        <Route path='/' render={() => <ProfileContainer />} />
       </Switch>
     </BrowserRouter>
   );
