@@ -44,7 +44,7 @@ class FlightForm extends React.Component {
               />
             )}
           />
-          <span class='emoji-break'>➡️ ✈️ ➡️</span>
+          <span className='emoji-break'>➡️ ✈️ ➡️</span>
           <Autocomplete
             id='arrField'
             freeSolo

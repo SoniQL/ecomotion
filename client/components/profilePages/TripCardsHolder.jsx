@@ -10,18 +10,23 @@ class TripCardsHolder extends Component {
     const flightCards = [];
     console.log(this.props.profileData);
 
-    if (this.props.profileData === null) {
-      return <div>'No data found.'</div>;
-    } else {
-      for (let i = 0; i < this.props.profileData.length; i += 1) {
-        console.log(
-          'the data that will be pushed into the flightCard',
-          this.props.profileData[i]
-        );
-        flightCards.push(<Cards profileData={this.props.profileData[i]}></Cards>);
-      }
-      return <div>{flightCards}</div>;
+    // if (this.props.profileData === null) {
+    //   return <div>'No data found.'</div>;
+    // } else {
+    //   for (let i = 0; i < this.props.profileData.length; i += 1) {
+    //     console.log(
+    //       'the data that will be pushed into the flightCard',
+    //       this.props.profileData[i]
+    //     );
+    //     flightCards.push(<Cards profileData={this.props.profileData[i]}></Cards>);
+    //   }
+    for (let i = 0; i < 7; i += 1) {
+      flightCards.push(<Cards />);
     }
+
+      return (
+        <div id='cardsContainer'>{flightCards}</div>
+      );
   }
 }
 
