@@ -30,8 +30,11 @@ const MakeDifferenceContainer = (props) => {
         <p></p>
       )}
       {/* link to the profile page - Reach Router */}
-      <Link to='/profile'>
+      {/* <Link to='/profile'>
         <div>MY PROFILE</div>
+      </Link> */}
+      <Link to='/profile'>
+        <div>Save Search</div>
       </Link>
     </div>
   );
