@@ -16,7 +16,7 @@ app.use(cookieParser());
 
 // handle parsing request body - both of these are from boiler plate
 app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({extended: true}));
 
 // handle requests for static files
 app.use('/build', express.static(__dirname + '/build'));
@@ -67,13 +67,13 @@ const checkUserLoggedIn = (req, res, next) => {
 // Auth Routes -- boiler plate passport
 app.get(
   '/auth/google',
-  passport.authenticate('google', { scope: ['profile', 'email'] })
+  passport.authenticate('google', {scope: ['profile', 'email']})
 );
 
 // main response path after successful login with google
 app.get(
   '/auth/google/callback',
-  passport.authenticate('google', { failureRedirect: '/failed' }),
+  passport.authenticate('google', {failureRedirect: '/failed'}),
   function (req, res, next) {
     //grabbing the user data from the google login
     const userData = {
@@ -119,7 +119,7 @@ app.use((err, req, res, next) => {
   const defaultErr = {
     log: 'Express error handler caught unknown middleware error',
     status: 500,
-    message: { err: 'An error occurred' },
+    message: {err: 'An error occurred'},
   };
   const errorObj = Object.assign({}, defaultErr, err);
   console.log(errorObj.log);
