@@ -32,10 +32,10 @@ const MakeDifferenceContainer = (props) => {
         <p></p>
       )}
       {/* if vCarbon has been updated, display those values */}
-      {props.vCarbon > 0 ? (<p>The same distance drive in your 2021 Subaru Impreza wil generate {props.vCarbon}kg of CO2 total</p>) : (<p></p>)
+      {props.vCarbon > 0 ? (<p>🚗 The same distance drive in your 2021 Subaru Impreza will generate {props.vCarbon}kg of CO2 total</p>) : (<p></p>)
       }
       {/* if vCarbon has been updated and there is more than one traveler*/}
-      {props.vCarbon > 0 && props.numTravelers > 1 ? (<p>Since you're carpooling with {props.numTravelers} people, each of you will generate {props.vCarbon/props.numTravelers}kg of CO2</p>) : (<p></p>)
+      {props.vCarbon > 0 && props.numTravelers > 1 ? (<p>👯 Since you're carpooling with {props.numTravelers} people, each of you will generate {(props.vCarbon/props.numTravelers).toFixed(2)}kg of CO2</p>) : (<p></p>)
       }
       {/* link to the profile page - Reach Router */}
       {/* <Link to='/profile'>
