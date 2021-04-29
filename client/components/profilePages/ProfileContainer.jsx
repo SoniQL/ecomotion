@@ -41,7 +41,7 @@ class ProfileContainer extends Component {
         <div className="nav">
           <div className="navLink" id="profPic">
             <Link to="/profile">My Profile</Link>
-            <div className="picture"></div>
+            <div id="picture"></div>
           </div>
           <div className="navLink" id="savedSearch">
             <Link to="/profile">My Trips</Link>

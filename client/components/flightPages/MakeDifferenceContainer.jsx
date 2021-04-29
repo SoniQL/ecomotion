@@ -41,9 +41,6 @@ const MakeDifferenceContainer = (props) => {
       {/* <Link to='/profile'>
         <div>MY PROFILE</div>
       </Link> */}
-      <Link to='/profile'>
-        <div>Save Search</div>
-      </Link>
     </div>
   );
 };
