@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import MainContainer from './flightPages/MainContainer.jsx';
-import MakeDifferenceContainer from './flightPages/MakeDifferenceContainer.jsx';
 import LoginContainer from './loginPages/LoginContainer.jsx';
 import TitleHeader from './loginPages/TitleHeader.jsx';
 import ProfileContainer from './profilePages/ProfileContainer.jsx';
