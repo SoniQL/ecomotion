@@ -13,7 +13,7 @@ export default function LoginContainer() {
       <div className='loginPageContainer'>
         <TitleHeader />
         <ChoiceHolder />
-        <div><Link to='/'>Search without logging in</Link></div>
+        <Link to='/'><button id='return'>Return to main</button></Link>
       </div>
     </MyProvider>
   );

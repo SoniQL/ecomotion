@@ -1,5 +1,6 @@
 $border: #2f0e50b5;
-$mainPurple: #66339933;
+$mainPurple: darken(#66339933, 10%);
+$buttonPurple: #6f3ea0c4;
 $lightColor: #eeecf5c2;
 $mediumColor: #bbc2ebcc;
 
@@ -7,6 +8,7 @@ $mediumColor: #bbc2ebcc;
 
 /* default base settings */
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap');
 
 /* work in progress. change as you like */
 
@@ -106,96 +108,142 @@ a {
   .options {
     font-size: 1.2rem;
   }
-
+}
   /* Login page design starts */
 
-  .loginPageContainer {
-    width: 100vw;
-    height: 100vh;
-    display: grid;
-    place-items: center;
-  }
+.loginPageContainer {
+  min-width: 400px;
+  max-width: 35vw;
+  margin: 20vh auto;
+  padding: 20px;
+  background: darken($mainPurple, 20%);
+  border: 2px solid $border;
+  border-radius: 10px;
+  text-align: center;
+}
 
-  .titleHeader {
-    font-size: 2rem;
-    color: rgb(230, 223, 223);
-  }
+.titleHeader {
+  font-size: 1.75rem;
+  color: rgb(230, 223, 223);
+  margin-bottom: 1.5rem;
 
-  .titleHeader > h1 {
-    margin-bottom: 1rem;
+  h1 {
+    // margin-bottom: 1rem;
     font-family: "Pacifico", cursive;
   }
 
-  /* Main search page styling below */
-
-  #header-container {
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-    font-family: 'Pacifico', cursive;
-    color: rgb(255, 245, 245);
-
-    h1 {
-      text-align: center;
-    }
+  em {
+    font-family: 'Crimson Text', serif;
+    font-size: 1.5rem;
   }
+}
 
-  .googleSign {
-    font-size: 1.2rem;
-    padding: 0.8rem;
-    background-color: rgb(255, 255, 247);
-    border-radius: 1rem;
-  }
+#customBtn {
+  font-family: 'Crimson Text', serif;
+  font-weight: 600;
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+  border: 1px solid $buttonPurple;
+}
 
-  #flight-info-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: $lightColor;
-    margin-left: 25%;
-    width: 50%;
-    border: 1px solid $border;
-    border-radius: 10px;
-    padding: 5px;
-    text-align: center;
-    font-size: 1.3em;
-  }
+#customBtn:hover {
+  background-color: $buttonPurple;
+  border: 1px solid white;
 
-  .flightOutput {
-    text-align: center;
-    font-size: 2em;
+  a {
     color: white;
   }
-  .emoji-break {
-    margin: 7px 0;
-  }
+}
 
-  .flight-options {
-    margin: 7px 0;
-    align-self: center;
-  }
+#return {
+  border: 1px solid white;
+  border-radius: 15px;
+  width: 60%;
+  margin: 1rem auto 1rem auto;
+  padding: 16px 0px 12px 0px;
+  color: white;
+  font-family: 'Crimson Text', serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  box-shadow: none;
+  text-align: center;
+}
 
-  button {
-    font-family: "Pacifico", cursive;
-    padding: 5px;
-    width: 100%;
-    border-radius: 5px;
-    border: 1px solid $border;
-    font-size: 1em;
-    background-color: $mainPurple;
-    color: black;
-  }
+#return:hover {
+  color: rgb(71, 36, 105);
+  border: 1px solid rgb(71, 36, 105);
+}
 
-  button:hover {
-    cursor: pointer;
-    background-color: $lightColor;
-    box-shadow: 1px 1px 1px black;
-    color: black;
-  }
+/* Main search page styling below */
 
-  h3 {
-    font-family: "Pacifico", cursive;
-    font-size: 1rem;
+#header-container {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  font-family: 'Pacifico', cursive;
+  color: rgb(255, 245, 245);
+
+  h1 {
+    text-align: center;
   }
+}
+
+.googleSign {
+  font-size: 1.2rem;
+  padding: 0.8rem;
+  background-color: rgb(255, 255, 247);
+  border-radius: 1rem;
+}
+
+#flight-info-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: $lightColor;
+  margin-left: 25%;
+  width: 50%;
+  border: 1px solid $border;
+  border-radius: 10px;
+  padding: 5px;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+.flightOutput {
+  text-align: center;
+  font-size: 2em;
+  color: white;
+}
+.emoji-break {
+  margin: 7px 0;
+}
+
+.flight-options {
+  margin: 7px 0;
+  align-self: center;
+}
+
+button {
+  font-family: "Pacifico", cursive;
+  padding: 5px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid $border;
+  font-size: 1em;
+  background-color: $mainPurple;
+  color: black;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: $lightColor;
+  box-shadow: 1px 1px 1px black;
+  color: black;
+}
+
+h3 {
+  font-family: "Pacifico", cursive;
+  font-size: 1rem;
 }
 /* Profile page design starts */
 
