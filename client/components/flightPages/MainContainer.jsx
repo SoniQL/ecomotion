@@ -131,7 +131,8 @@ class MainContainer extends React.Component {
             carbon={this.state.flightInfo.carbon}
           />
           {/* Put this wherever we want our login to be */}
-          <Link to='/login'>Log in</Link>
+          <Link to='/login' id="loginButton">Log in</Link>
+          <Link to='/login' id="signupButton">Sign Up</Link>
           {/* pass carbon flight info into this component and actions */}
           <MakeDifferenceContainer
             actions={this.state.offsetActions}
