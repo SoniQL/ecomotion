@@ -9,6 +9,7 @@ $mediumColor: #bbc2ebcc;
 /* default base settings */
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poiret+One&display=swap');
 
 /* work in progress. change as you like */
 
@@ -21,6 +22,8 @@ $mediumColor: #bbc2ebcc;
 body {
   background: whitesmoke url("/bg4.jpg") no-repeat fixed center;
   background-size: cover;
+  font-family: Montserrat;
+  
 }
 
 a {
@@ -65,9 +68,9 @@ a {
     margin-top: 10px;
     background: $lightColor;
     width: 50%;
-    height: 30%;
+    height: auto;
     border: 1px solid $border;
-    border-radius: 5px;
+    border-radius: 10px;
     text-align: center;
     box-shadow: 1px 1px 1px solid black;
     padding-top: 4%;
@@ -90,6 +93,7 @@ a {
     width: 20rem;
     padding: 0.8rem 1rem;
     border-radius: 5px;
+
   }
 
   .btnSearch {
@@ -98,6 +102,7 @@ a {
     border-radius: 6px;
     color: rgb(70, 69, 68);
     background-color: rgb(201, 227, 245);
+    
   }
 
   i {
@@ -108,7 +113,49 @@ a {
   .options {
     font-size: 1.2rem;
   }
-}
+
+
+
+  #loginButton {
+    border: 2px solid $border;
+    width: 10%;
+    height: 5%;
+    text-align: center;
+    padding-top: 6px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    font-size: 1.5em;
+    margin-bottom: 40px;
+    background: $lightColor;
+    color: black;
+    box-shadow: 2px 2px 2px black;
+  }
+
+  #signupButton {
+    border: 2px solid $border;
+    width: 10%;
+    height: 5%;
+    text-align: center;
+    padding-top: 6px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 55%;
+    font-size: 1.5em;
+    margin-bottom: 40px;
+    background: $lightColor;
+    color: black;
+    box-shadow: 2px 2px 2px black;
+  }
+  
+  #loginButton:hover,  #signupButton:hover {
+    background-color: #8D8EBC;
+    color: white;
+    box-shadow: 3px 3px 3px black;
+  }
+}  
   /* Login page design starts */
 
 .loginPageContainer {
@@ -224,14 +271,15 @@ a {
 }
 
 button {
-  font-family: "Pacifico", cursive;
-  padding: 5px;
-  width: 100%;
-  border-radius: 5px;
-  border: 1px solid $border;
-  font-size: 1em;
-  background-color: $mainPurple;
-  color: black;
+    // font-family: "Pacifico", cursive;
+    font-family: Montserrat;
+    padding: 5px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid $border;
+    font-size: 1em;
+    background-color: $mainPurple;
+    color: black;
 }
 
 button:hover {
@@ -264,27 +312,42 @@ h3 {
   border-radius: 15px;
   box-shadow: 3px 3px 3px black;
 
-
   .navLink {
     border: 2px solid $border;
     border-radius: 5px;
     padding-top: 15px;
     height: 60px;
     text-align: center;
-    font-size: 1.35em;
+    font-size: 1.65em;
     color: white;
     margin: 5px;
+    // font-family: Poiret One;
+    font-family: Montserrat;
+    transition: 1s;
   }
 
   .navLink:hover {
-    background-color: #7673B5;
+    background-color: #7673b5;
     box-shadow: 2px 2px 2px black;
+    animation: change-background 2s ease;
+    transform: translateX(2%); 
+
+    @keyframes change-background {
+      0% {
+        background: #717EB2;
+      }
+      100% {
+        background: #7673b5;
+      }
+      // 100% {
+      //   background: #56538f;
+      // }
+    }
+  }
+  a {
+    color: white;
   }
 
-   a {
-     color: white;
-   }
-   
   #picture {
     border: 2px solid white;
     height: 220;
@@ -322,7 +385,6 @@ h3 {
   border: 1px solid $border;
   border-radius: 10px;
   box-shadow: 2px 2px 2px black;
-
 }
 
 // .cardsContainer {
@@ -350,13 +412,13 @@ h3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(auto-fill, auto);
-  grid-row-gap: .5em;
-  grid-column-gap: .5em;
+  grid-row-gap: 0.5em;
+  grid-column-gap: 0.5em;
   background-color: inherit;
   padding: 10px;
   overflow-y: scroll;
 }
- #cardsContainer::-webkit-scrollbar {
+#cardsContainer::-webkit-scrollbar {
   display: none;
 }
 
@@ -368,6 +430,7 @@ h3 {
   text-align: center;
   border-radius: 10px;
   box-shadow: 1px 1px 1px black;
+  transition: 1s;
 
   h3 {
     font-size: 14px;
@@ -376,6 +439,29 @@ h3 {
   p {
     font-size: 14px;
   }
+  #deleteButton {
+    height: 30px;
+    width:  40px;
+    font-size: .5em;
+    margin-top: 5px;
+    margin-left: 90%;
+    // background-color: #8C8EC0;
+    background-color: $lightColor;
+    color: white;
+    border:  $border;
+    border-radius: 5px;
+    
+  }
+  #deleteButton:hover {
+    background-color: $mainPurple;
+    color: black;
+    box-shadow: 1px 1px 1px black;
+  }
+}
+.card:hover{
+  transform: translateX(1%);
+  background-color: $mediumColor;
+  box-shadow: 2px 2px 2px black; 
 }
 
 .actionTypes {
@@ -406,40 +492,32 @@ h3 {
   color: white;
 
   p {
-  margin: 3vh;
-}
-
+    margin: 3vh;
+  }
 
   #picture {
-  border: 2px solid white;
-  height: 220;
-  width: 70%;
-  border-radius: 100%;
-  margin: auto;
+    border: 2px solid white;
+    height: 220;
+    width: 70%;
+    border-radius: 100%;
+    margin: auto;
+  }
+
+  .navLink {
+    border: 2px solid $border;
+    border-radius: 5px;
+    padding-top: 15px;
+    height: 60px;
+    text-align: center;
+    font-size: 1.35em;
+    color: white;
+    margin: 5px;
+  }
+
+  #profPic {
+    height: 300px;
+    font-family: "Pacifico";
+    margin-right: 10vw;
+    color: white;
+  }
 }
-
-.navLink {
-  border: 2px solid $border;
-  border-radius: 5px;
-  padding-top: 15px;
-  height: 60px;
-  text-align: center;
-  font-size: 1.35em;
-  color: white;
-  margin: 5px;
-}
-
-#profPic {
-  height: 300px;
-  font-family: 'Pacifico';
-  margin-right: 10vw;
-  color: white;
-}
-
-
-}
-
-
-
-
-

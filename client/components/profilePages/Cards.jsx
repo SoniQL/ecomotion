@@ -48,11 +48,13 @@ export default function Cards(props) {
         <p>Plant 8,000 trees 🌳</p>
         <p>Have 24 meatless Mondays 🥩</p>
         <p>Choose not to throw plastic into the sea 🗑</p>
+        <button id='deleteButton'>✖️</button>
       </div>
     </div>
   );
 }
 
+//🛍
 //this is the form of the profileData we are receiving
 
 // {"depart":"SFO","arrive":"YYZ",
