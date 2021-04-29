@@ -4,20 +4,16 @@ import ActionTypes from './ActionTypes.jsx';
 
 export default function Cards(props) {
   return (
-    <div>
-      <div className='cardStyling'>
-        <FlightHeading />
-        <ActionTypes />
-      </div>
-      <div>
-        <p>
-          Your Flight Departing from {props.profileData.depart} and Arriving at
-          {props.profileData.arrive}
-        </p>
-        <p>Emitted {props.profileData['co2_impact']}kgs of Carbon</p>
-        <p>Plant {props.profileData['tree_impact']} Trees</p>
-        <p>Have {props.profileData['meat_impact']} Meatless Mondays</p>
-        <p>Choose not to use {props.profileData['bags_impact']} Plastic Bags</p>
+    <div className='card'>
+      <h3 className='cardHeader'>
+        Your flight departing from {props.profileData.depart} and arriving at {props.profileData.arrive}
+      </h3>
+      <div className='cardBody'>
+        <p>Emitted {Math.ceil(props.profileData['co2_impact'])} kgs of carbon </p>
+        <p>Plant {Math.ceil(props.profileData['tree_impact'])} trees 🌳</p>
+        <p>Have {Math.ceil(props.profileData['meat_impact'])} Meatless Mondays 🥩</p>
+        <p>Choose not to use {Math.ceil(props.profileData['bags_impact'])} plastic bags 🗑</p>
+        <button id='deleteButton'>✖️</button>
       </div>
     </div>
   );

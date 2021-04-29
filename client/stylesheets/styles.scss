@@ -308,8 +308,8 @@ h3 {
   padding: 1rem;
   display: block;
   width: 20%;
+  min-width: 260px;
   height: 100%;
-  border-radius: 15px;
   box-shadow: 3px 3px 3px black;
 
   .navLink {
@@ -318,7 +318,7 @@ h3 {
     padding-top: 15px;
     height: 60px;
     text-align: center;
-    font-size: 1.65em;
+    font-size: 1.25em;
     color: white;
     margin: 5px;
     // font-family: Poiret One;
@@ -344,26 +344,43 @@ h3 {
       // }
     }
   }
+
   a {
     color: white;
+    display: flex;
+    flex-direction: column;
+
+    button {
+      border: none;
+      justify-content: center;
+      color: white;
+      height: 100%;
+      width: 100%;
+      background-color: transparent;
+      box-shadow: none;
+    }
+
+    button:hover {
+      background-color: transparent;
+    }
   }
 
   #picture {
     border: 2px solid white;
-    height: 220;
-    width: 70%;
-    border-radius: 100%;
-    margin: auto;
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    margin: 10% auto;
   }
+
   #profPic {
-    height: 300px;
+    min-height: 300px;
     font-family: "Pacifico";
   }
 
   .logoBox {
     margin-top: 50px;
     text-align: center;
-    // background-color: pink;
     height: 80px;
     font-size: 3em;
     font-family: "Pacifico", cursive;
@@ -371,29 +388,16 @@ h3 {
   }
 }
 
+// styling for gallery on all logged-in pages
 .gallery {
-  // display: grid;
-  // grid-template-columns: repeat(4, 1fr);
-  // grid-template-rows: repeat(auto-fill, 120px);
-  // grid-row-gap: .5em;
-  // grid-column-gap: 1em;
   background-color: $mainPurple;
   width: 65%;
   height: 90%;
-  margin-left: 5%;
-  margin-top: 7vh;
+  margin: 5vh auto 0 auto;
   border: 1px solid $border;
   border-radius: 10px;
   box-shadow: 2px 2px 2px black;
 }
-
-// .cardsContainer {
-//   display: grid;
-//   grid-template-columns: repeat(4, 1fr);
-//   grid-template-rows: repeat(auto-fill, 120px);
-//   grid-row-gap: .5em;
-//   grid-column-gap: 1em;
-// }
 
 .tripHeader {
   text-align: center;
@@ -404,9 +408,6 @@ h3 {
 }
 
 #cardsContainer {
-  // margin-top: 1rem;
-  // font-size: 2rem;
-  // margin-left: 1rem;
   width: 100%;
   height: 90%;
   display: grid;
@@ -427,24 +428,29 @@ h3 {
   border: 1px solid $border;
   padding: 20px;
   font-size: 30px;
-  text-align: center;
   border-radius: 10px;
   box-shadow: 1px 1px 1px black;
   transition: 1s;
 
   h3 {
-    font-size: 14px;
+    font-size: 20px;
+    font-style: italic;
+    font-family: 'Crimson Text', serif;
+    margin-bottom: 10px;
   }
 
   p {
     font-size: 14px;
+    margin-bottom: 5px;
   }
+
   #deleteButton {
     height: 30px;
     width:  40px;
     font-size: .5em;
     margin-top: 5px;
     margin-left: 90%;
+    bottom: 0;
     // background-color: #8C8EC0;
     background-color: $lightColor;
     color: white;
@@ -497,27 +503,29 @@ h3 {
 
   #picture {
     border: 2px solid white;
-    height: 220;
-    width: 70%;
-    border-radius: 100%;
-    margin: auto;
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    margin: 10% auto;
   }
 
   .navLink {
     border: 2px solid $border;
     border-radius: 5px;
     padding-top: 15px;
+    width: 250px;
     height: 60px;
     text-align: center;
     font-size: 1.35em;
     color: white;
     margin: 5px;
+    font-family: Montserrat;
+    font-weight: 400;
+    transition: 1s;
   }
 
   #profPic {
-    height: 300px;
+    min-height: 300px;
     font-family: "Pacifico";
-    margin-right: 10vw;
-    color: white;
   }
 }

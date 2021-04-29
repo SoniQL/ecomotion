@@ -11,6 +11,14 @@ class SearchContainer extends Component {
     };
   }
 
+  logout() {
+    console.log('logging out...');
+    fetch('/logout')
+      .then((response) => {
+        console.log(response);
+      });
+  }
+
   render() {
     return (
 
@@ -28,7 +36,7 @@ class SearchContainer extends Component {
           </div>
           <div className="navLink" id="account"><Link to='/account'>Account Info</Link></div>
           <div className="navLink" id="logOut">
-            <Link to="/logout">Log Out</Link>
+            <Link to="/logout"><button onClick={()=>{this.logout()}}>Log Out</button></Link>
           </div>
 
           <div className="logoBox">ecomotion</div>
