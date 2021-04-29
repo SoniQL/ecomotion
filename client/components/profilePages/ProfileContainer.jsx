@@ -2,6 +2,7 @@ import React, { Component, useEffect, useState } from "react";
 import TripHeader from "./TripHeader.jsx";
 import TripCardsHolder from "./TripCardsHolder.jsx";
 import { Link } from "react-router-dom";
+import { Redirect } from "react-router-dom";
 
 class ProfileContainer extends Component {
   constructor(props) {
@@ -21,6 +22,14 @@ class ProfileContainer extends Component {
       .then((profileDataResults) => {
         console.log("logging data call for profiles", profileDataResults);
         return this.setState({ profileData: profileDataResults.array_to_json });
+      });
+  }
+
+  logout() {
+    console.log('logging out...');
+    fetch('/logout')
+      .then((response) => {
+        console.log(response);
       });
   }
 
@@ -44,7 +53,7 @@ class ProfileContainer extends Component {
             <Link to="/account">Account Info</Link>
           </div>
           <div className="navLink" id="logOut">
-            <Link to="/logout">Log Out</Link>
+            <Link to="/logout"><button onClick={()=>{this.logout()}}>Log Out</button></Link>
           </div>
 
           <div className="logoBox">ecomotion</div>

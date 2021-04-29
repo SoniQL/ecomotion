@@ -11,6 +11,27 @@ class AccountContainer extends Component {
     };
   }
 
+  componentDidMount() {
+    //fetching the info from flights table in sql db.
+    fetch("/api/loadProfile")
+      .then((response) => {
+        console.log("raw data", response);
+        return response.json();
+      })
+      .then((profileDataResults) => {
+        console.log("logging data call for profiles", profileDataResults);
+        return this.setState({ profileData: profileDataResults.array_to_json });
+      });
+  }
+
+  logout() {
+    console.log('logging out...');
+    fetch('/logout')
+      .then((response) => {
+        console.log(response);
+      });
+  }
+
   render() {
     return (
       <div className='profileContainer'>
@@ -27,14 +48,14 @@ class AccountContainer extends Component {
           </div>
           <div className="navLink" id="account"><Link to='/account'>Account Info</Link></div>
           <div className="navLink" id="logOut">
-            <Link to="/logout">Log Out</Link>
+            <Link to="/logout"><button onClick={()=>{this.logout()}}>Log Out</button></Link>
           </div>
 
           <div className="logoBox">ecomotion</div>
         </div>
         <div className='gallery'>
           <h2 id="accountInfoHeader"> Account Info </h2>
-          <AccountInfo />
+          <AccountInfo profileData={ this.state.profileData } />
         </div>
       </div>
     ) 
