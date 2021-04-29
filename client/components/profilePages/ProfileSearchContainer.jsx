@@ -114,7 +114,7 @@ class ProfileSearchContainer extends React.Component {
       <div className='container'>
         <div className='outerBox'>
           <div id='header-container'>
-            <h1>ecomotion</h1>
+            <h1>New Search</h1>
           </div>
           {/* passing onSubmit and carbon info */}
           <FlightInterface

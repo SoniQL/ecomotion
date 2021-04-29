@@ -17,18 +17,18 @@ class SearchContainer extends Component {
       <div className="profileContainer">
         <div className="nav">
           <div className="navLink" id="profPic">
-            <Link to="/profile">My profile</Link>
+            <Link to="/profile">My Profile</Link>
             <div id="picture"></div>
           </div>
           <div className="navLink" id="savedSearch">
             <Link to="/profile">My Trips</Link>
           </div>
           <div className="navLink" id="newSearch">
-            <Link to="/search">New search</Link>
+            <Link to="/search">New Search</Link>
           </div>
-          <div className="navLink" id="account"><Link to='/account'>Account info</Link></div>
+          <div className="navLink" id="account"><Link to='/account'>Account Info</Link></div>
           <div className="navLink" id="logOut">
-            <Link to="/logout">Log out</Link>
+            <Link to="/logout">Log Out</Link>
           </div>
 
           <div className="logoBox">ecomotion</div>
